@@ -327,3 +327,24 @@ o/p:24
 
 
 
+•	Factorial 
+#include <stdio.h>
+int factorial(int num){
+    if(num==0){
+        return 1;
+    }
+    else
+    {
+        return num*factorial(num-1);
+    }
+}
+int main()
+{
+    int num,v;
+    printf("enter any number:");
+    scanf("%d",&num);
+    v=factorial(num);
+    printf("%d",v);
+    return 0;
+}
+

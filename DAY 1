@@ -1,0 +1,55 @@
+Program efficiency
+E is all about time and space complexity
+Dynamic programming
+In greedy approach what ever sol given at the 1st goal is fixed as the final sol
+Note: this is not the best approach for all the scenarious
+How ever it also works some cases
+In dp we will be finding out all the possible sols for the given problem out of which the best will be picked
+Time and space complexity
+Aymptotic notations
+Bigo(n), theta, omega
+
+Swajith is having 1 lakh in his bank account rate of interest is 12% per annum in the 5th month Swajith Is withdrawing 25000 as in order to buy gift to his loved ones,10000 is in the 9th month being deposited in his 2nd gf account. find end of the  financial year of Swajith account
+
+ 
+Structre{
+Int
+Char
+}
+8
+Union{
+Int 
+Char
+}
+4
+
+
+
+Struct{
+Int 
+Double
+Char}
+4+4+8+1+7
+Struct{
+Double
+Char}
+8+1+7
+For(int i=0;i<n;i++)
+{
+Statements;
+}
+If n=5
+It executes n+1 times
+For(i=1;i<n;i+2)
+{
+Statement;
+}
+n/2
+f(n)=n/2
+degree of polynomial is n
+so n/2 anything is n
+so here also O(n)
+so irrespective of iteration time is gonna be the same O(n)
+
+
+get one input and find the sum of digit of the input

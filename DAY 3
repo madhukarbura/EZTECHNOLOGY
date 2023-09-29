@@ -1,1 +1,173 @@
+DAY 3
+10*4/6+3-1%2
+
+40/6=6.666+3
+9.666
+
+1%2=1
+9.666-1
+=8.666
+
+
+Bit manipulation tricks:
+Xor   ^
+------------
+Even  1`s:0
+Odd   1`s:1
+
+Rule1: Xor of number itself is 0
+
+5^5=0
+Rule2: Xor of number with 0 is number itself
+
+5^5^5=5
+---------------
+
+Right shift:
+
+5>>1
+5/2=1
+=2
+5>>2
+5/2=2
+2/2=1
+
+7<<1
+=14
+After creating an array find out the smallest missing positive integers:
+s=input()
+l=[int(x) for x in s.split(" ")]
+l1=[]
+for x in l:
+    if x>=0:
+        l1.append(x)
+l1.sort()
+for i in range(0,max(l1)+1):
+    if(i!=l1[i]):
+        print(i)
+        break
+print(max(l1)+1)
+
+
+execution priority for operators in python
+
+Operators Meaning
+
+()       Parentheses
+**       Exponent
++x, -x, ~x     Unary plus, Unary minus, Bitwise NOT
+*, /, //, %    Multiplication, Division, Floor division, Modulus
++, -       Addition, Subtraction
+<<, >>       Bitwise shift operators
+&       Bitwise AND
+^       Bitwise XOR
+|       Bitwise OR
+~              Bitwise NOT
+==, !=, >, >=, <, <=, is, is not, in, not in Comparisons, Identity, Membership operators
+not      Logical NOT
+and      Logical AND
+or      Logical OR
+
+1.basic program:
+print(10&4+3)
+# 4+3=7 , 7=0111 binary numbers
+#10=1010 binary numbers then 10&7=1010&0111=0010
+print(6|3&9+6)#9+6=15 then 13 ka binary no 15=1111
+#3&15=0011&1111 =0011 the 6|3=0110|0011=111=7
+print(~9+4&6)#9+4=13 then ~13&6 now ~13=-14
+
+2.problem
+
+elements=input("enter the elements :")
+my_array=[int(x) for x in elements.split(" ")]
+r_array=[]
+for x in my_array:
+    if x >=0:
+        r_array.append(x)
+r_array.sort()
+for i in range(0,max(r_array)+1):
+    if(i!=r_array[i]):
+        print(i)
+        break
+print(max(r_array)+1 )
+
+python simple code:
+b=input()
+a=[int(x) for x in b.split(" ")]
+print(a)
+for i in range(len(a)):
+    if i not in a:
+        print(i)
+        break;
+
+
+
+•	In a given array every number occurs twice if the number occur only once then print the number
+
+
+
+
+•	Swaping with xor
+
+a=10
+b=40
+print("a=",a,"b=",b)
+a=a^b
+b=a^b
+a=a^b
+print("a=",a,"b=",b)
+
+
+
+
+
+•	for the given number n check kth bit is set or not
+n=int(input("enter the number to find set or not:"))
+k=int(input("enter the number k value:"))
+if(n&(1<<k-1)):
+    print("set")
+else:
+    print("not set")
+
+
+•	for given number n find out xor of all n numbers
+xor=0
+n=int(input("enter the number :"))
+for i in range(1,n+1):
+    xor=i^xor 
+print(xor)
+ 
+another ways:
+
+n=int(input("enter the number:"))
+xor=0
+if(n%4==0):
+    print(n)
+elif(n%4==1):
+    print(1)
+elif(n%4==2):
+    print(n+1)
+elif(n%4==3):
+    print(0)
+
+find all the xor number in given range 1-r/print x0r
+xor=0
+l=int(input("starting number:"))
+n=int(input("enter the number :"))
+for i in range(l,n+1):
+    xor=i^xor 
+print(xor)
+
+
+odd or even using and operator:
+n=int(input("enter the number :"))
+if(n&1==0):
+    print("even")
+else:
+    print("odd")
+
+
+
+recursion
+
 

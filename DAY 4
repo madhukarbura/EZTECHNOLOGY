@@ -18,3 +18,19 @@ class a:
 obj=a()
 obj.b(obj.x,obj.y)
 obj.display_results(obj.x,obj.y,obj.z)
+
+
+stack:
+
+
+l=[]
+n=int(input("enter the size of stack:"))
+for i in range(n):
+    l.append(int(input("enter the elements of stack:")))
+print(l)
+for i in range(n):
+    print("the stack elements are:\n")
+    print(l.pop())
+print(l)#empty stack
+#print(l[::-1])#reversing the list so we use [::-1]
+#print(l.pop())

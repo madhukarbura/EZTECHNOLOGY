@@ -37,7 +37,7 @@ def print_magic_square(magic_square):
 
 
 
-generation of parantasis:
+generation of paranthesis:
 
 def Is_balanced(expression):
     stack=[]

@@ -35,6 +35,23 @@ def print_magic_square(magic_square):
         # Print each row as a space-separated string
         print(" ".join(map(str, row)))
 
+
+
+generation of parantasis:
+
+def Is_balanced(expression):
+    stack=[]
+    for char in expression:
+        if char in "({[":
+            if not stack:
+                return False
+            top =stack.pop()
+            if (char==")" and top!="(") or (char=="}" and top!="{") or \
+                (char=="]" and top!="["):
+                return False
+    return len(stack)==0
+s=input()
+print(Is_balanced(s))
 # Example usage:
 n = int(input("enter the order:")) # Specify the order of the magic square (e.g., 3 for a 3x3 square)
 magic_square = generate_odd_order_magic_square(n)

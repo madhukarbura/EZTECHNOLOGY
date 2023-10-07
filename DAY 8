@@ -93,3 +93,15 @@ for i in range(len(arr)):
         j-=1
     elif(arr[i]+arr[j]==target):
         print(i+1,j+1)
+
+
+
+n,k=map(int,input().split())
+l=[]
+for i in range(n):
+    l.append(int(input()))
+s,c=set(l),0
+for i in s:
+    if l.count(i)>=k:
+        c+=1
+print(c)

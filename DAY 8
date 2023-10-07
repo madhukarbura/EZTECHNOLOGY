@@ -1,0 +1,85 @@
+def demo(s):
+    los=s.split(',')
+    idxpof=los.index('4')
+    idxpos=los.index('7')
+    n1,n2=0,''
+    for i in los[:idxpof]+los[idxpos+1:]:
+        n1+=int(i)
+    for i in los[idxpof:idxpos+1]:
+        n2+=i
+    return n1+int(n2)
+s=input()
+print(demo(s))
+
+
+
+
+def demo(s):
+    l=[]
+    for i in s:
+        if i.isalpha():
+            l.append(i)
+        else:
+            spc=i
+            idxspc=s.index(i)
+    l.reverse()
+    l.insert(idxspc,spc)
+    return ''.join(l)
+s=input("enter the string: ")
+print(demo(s))
+
+
+l=[]
+l=[item for item in input("Enter the list items : ").split()]
+s=[]
+for i in range(len(l)):
+    if(l[i]=="("):
+        s.append("(")
+    elif(l[i]=="{"):
+        s.append("{")
+    elif(l[i]=="["):
+        s.append("[")
+    elif(l[i]=="]"):
+        
+        if(l[i]!="["):
+            
+            s.pop()
+    elif(l[i]=="}"):
+        if(l[i]!="{"):
+            s.pop()
+    elif(l[i]==")"):
+        if(l[i]!="("):
+            s.pop()
+    
+
+if(len(s)==0):
+    print("balanced")
+else:
+    print(i)
+
+
+
+s=input("enter the string: ")#Abhishek:43848,Mayur:3749,Friend:3949,Yeah:7878
+los=s.split(',')
+op=''
+for i in los:
+    m=i.split(':')
+    name=m[0]
+    code=m[1]
+    max=0
+    for i in code:
+        if int(i) > max and int(i)<=len(name):
+            max=int(i)
+    if max==0:
+        op+='X'
+    else:
+        op+=name[max-1]
+print(op)            
+        
+
+
+n=input()#7564168
+op=''
+for i in range(1,len(n),2):
+    op+=str(int(n[i])**2)
+print(op[:4])

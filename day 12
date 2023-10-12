@@ -1,0 +1,15 @@
+permutation:
+def permute(arr):
+    if len(arr)==1:
+        return [arr]
+    ans=[]
+    for i in range(len(arr)):
+        temp_per=[arr[i]]
+        s_per=arr[0:i]+arr[i+1:]
+        per_arr=permute(s_per)
+        for e in per_arr:
+            ans.append(temp_per+e)
+    return ans
+    
+arr=list(map(int,input().split()))
+print(permute(arr))

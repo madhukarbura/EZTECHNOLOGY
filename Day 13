@@ -125,3 +125,26 @@ p q r s t u
 v w x y z a b 
 c d e f g h i j 
 k l m n o p q r s"""
+"""def hollow_pyramid(n):
+    row = n
+    col = 2*n-1
+    var=2
+    start,end = n-1, n-1
+    for i in range(row):
+        for j in range(col):
+            if (j==start or j==end) and i!=n-1:
+                print("*",end="")
+            elif i==n-1 and (j>=start and j<=n-1):
+                print("*",end=" ")
+            else:
+                print(" ",end="")
+        print()
+        start-=1
+        end+=1
+n=int(input("size:"))
+hollow_pyramid(n)
+    *    
+   * *   
+  *   *  
+ *     * 
+* * * * * """

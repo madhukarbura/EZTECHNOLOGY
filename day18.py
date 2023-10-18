@@ -10,7 +10,7 @@ if k==sum:
 else:
     print("not an amstrong") """
 
-def print_matrix(mat):
+"""def print_matrix(mat):
     for row in mat:
         print(row)
 def LCS(s1, s2):
@@ -29,4 +29,4 @@ def LCS(s1, s2):
 s1 = "AGTAB"
 s2 = "GXTAYB"
 answer = LCS(s1, s2)
-print("My answer is: ",answer)
+print("My answer is: ",answer)"""
